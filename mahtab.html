@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajmain Mahtab's Website</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #myPhoto {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: none; /* initially hide the photo */
+        }
+
+        #clickableOption {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi, this is Ajmain Mahtab. If you want to see my picture, click here.</h1>
+    <br>
+    <a id="clickableOption" href="#" onclick="showPhoto()">Click to see Ajmain The Shahrukh Khan's photo!</a>
+    
+    <img id="myPhoto" src="C:\Users\ajmai\Downloads\ajmain.jpg" alt="Ajmain Mahtab's Photo">
+
+    <script>
+        function showPhoto() {
+            // Display the hidden photo when the option is clicked
+            document.getElementById("myPhoto").style.display = "block";
+        }
+    </script>
+</body>
+</html>
